@@ -1,35 +1,3 @@
-let audioUnlocked = false;
-
-function unlockAudio() {
-  const unlockDiv = document.getElementById('unlock-audio');
-  const audio = document.getElementById('narration');
-
-  if (audio && !audioUnlocked) {
-    audio.play().then(() => {
-      audio.pause();
-      audio.currentTime = 0;
-      audioUnlocked = true;
-      unlockDiv.style.display = 'none';
-    }).catch(err => {
-      console.error("Autoplay failed:", err);
-    });
-  }
-}
-
-function playNarration() {
-  const audio = document.getElementById('narration');
-  if (audio && audioUnlocked) {
-    audio.play();
-  }
-}
-
-function stopNarration() {
-  const audio = document.getElementById('narration');
-  if (audio && audioUnlocked) {
-    audio.pause();
-    audio.currentTime = 0;
-  }
-}
 
 document.getElementById("addToWalletBtn").addEventListener("click", async () => {
   if (typeof window.ethereum === "undefined") {
