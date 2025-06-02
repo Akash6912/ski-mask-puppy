@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="icon" type="image/png" href="assets/logo.jpg" />
+  <title>Ski Mask Puppy</title>
+  <link rel="stylesheet" href="sources/style.css" />
+</head>
+<body>
+    <!-- Unlock interaction -->
+<div id="unlock-audio" onclick="unlockAudio()" style="position:fixed; top:0; left:0; width:100%; height:100vh; background:#000; color:white; display:flex; align-items:center; justify-content:center; z-index:10000; font-size:1.5rem;">
+  Tap or Click Anywhere to Enter
+</div>
+
+<header class="navbar">
+  <div class="nav-container">
+    <div class="logo">$Skipuppy</div>
+    <nav class="nav-links" id="navLinks">
+      <a href="#hero">Home</a>
+      <a href="#tokenomics">Tokenomics</a>
+      <a href="#comic-gallery">Comics</a>
+      <a href="#roadmap">RoadMap</a>
+      <a href="#join">Join</a>
+    </nav>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  </div>
+</header>
+
+  <section class="hero" id="hero">
+    <h1 class="glitch" data-text="Ski Mask Puppy.">Ski Mask Puppy.</h1>
+    <p class="subtitle">The true heir to Ski Mask Dog.<br>Your second chance</p>
+    <a href="https://app.uniswap.org/explore/tokens/base/0x2fF5bE03a5456aB99836cc2caA4Ae0d158680581" target="_blank" rel="noopener noreferrer">
+  <button class="buy-button">Buy Now</button>
+</a>
+    <p class="tagline">$Skipuppy on Base | Community-Driven Chaos</p>
+    <div class="icon-socials">
+        <a href="https://x.com/ski_puppy_base" target="_blank" aria-label="Twitter">
+          <img src="assets/twitter-img.svg" alt="Twitter" />
+        </a>
+        <a href="https://t.me/skipuppy_on_base" target="_blank" aria-label="Telegram">
+          <img src="assets/telegram-img.svg" alt="Telegram" />
+        </a>
+      </div>
+  </section>
+
+  <section class="legacy" id="legacy">
+  <div class="legacy-content">
+    <div class="legacy-text">
+      <p>Not some cat.<br>Not some masked LARP.</p>
+      <p class="highlight">This is legacy.<br>This is heritage.</p>
+    </div>
+    <div class="legacy-image">
+      <img src="assets/legacy.jpg" alt="Legacy Hero" />
+    </div>
+  </div>
+</section>
+
+<section class="watcher" id="watcher" onmouseenter="playNarration()" onmouseleave="stopNarration()">
+  <div class="watcher-overlay">
+    <div class="watcher-content">
+      <p>Hidden in the trenches...</p>
+      <p>Watching. Waiting.</p>
+      <p>Calculating the perfect moment to strike.</p>
+    </div>
+  </div>
+  <audio id="narration" src="assets/narration.mp3" preload="auto"></audio>
+</section>
+
+<section class="dog-god" id="chosen">
+  <div class="dog-god-content">
+    <h2 class="dog-title">
+      Chosen by the Dog Gods.<br>
+      He did not just wear the mask—<br>
+      He was born in it.
+    </h2>
+    <div class="dog-image-wrapper">
+      <img src="assets/dog-god.jpg" alt="Puppy in Mayhem Mode" class="dog-image">
+  </div>
+</section>
+<section class="ticker">
+    <div class="ticker-inner" id="ticker-inner">
+      <span class="white">$SKIPUPPY</span>
+      <span class="Red">$SKIPUPPY</span>
+      <span class="white">$SKIPUPPY</span>
+      <span class="Red">$SKIPUPPY</span>
+      <span class="white">$SKIPUPPY</span>
+      <span class="Red">$SKIPUPPY</span>
+      <span class="white">$SKIPUPPY</span>
+      <span class="Red">$SKIPUPPY</span>
+      <span class="white">$SKIPUPPY</span>
+      <span class="Red">$SKIPUPPY</span>
+      <span class="white">$SKIPUPPY</span>
+      <span class="Red">$SKIPUPPY</span>
+      <span class="white">$SKIPUPPY</span>
+      <span class="Red">$SKIPUPPY</span>
+      <span class="white">$SKIPUPPY</span>
+      <span class="Red">$SKIPUPPY</span>
+      <span class="white">$SKIPUPPY</span>
+      <span class="Red">$SKIPUPPY</span>
+      <span class="white">$SKIPUPPY</span>
+      <span class="Red">$SKIPUPPY</span>
+      <span class="white">$SKIPUPPY</span>
+      <span class="Red">$SKIPUPPY</span>
+      <span class="white">$SKIPUPPY</span>
+      <span class="Red">$SKIPUPPY</span>
+       <span class="white">$SKIPUPPY</span>
+      <span class="Red">$SKIPUPPY</span>
+      <span class="white">$SKIPUPPY</span>
+      <span class="Red">$SKIPUPPY</span>
+      <span class="white">$SKIPUPPY</span>
+      <span class="Red">$SKIPUPPY</span>
+      <span class="white">$SKIPUPPY</span>
+      <span class="Red">$SKIPUPPY</span>
+      <span class="white">$SKIPUPPY</span>
+      <span class="Red">$SKIPUPPY</span>
+      <span class="white">$SKIPUPPY</span>
+      <span class="Red">$SKIPUPPY</span>
+      <span class="white">$SKIPUPPY</span>
+      <span class="Red">$SKIPUPPY</span>
+      <span class="white">$SKIPUPPY</span>
+      <span class="Red">$SKIPUPPY</span>
+      <span class="white">$SKIPUPPY</span>
+      <span class="Red">$SKIPUPPY</span>
+      <span class="white">$SKIPUPPY</span>
+      <span class="Red">$SKIPUPPY</span>
+      <span class="white">$SKIPUPPY</span>
+      <span class="Red">$SKIPUPPY</span>
+      <span class="white">$SKIPUPPY</span>
+      <span class="Red">$SKIPUPPY</span>
+</section>
+
+<section class="tokenomics" id="tokenomics">
+  <div class="tokenomics-container">
+    <h2 class="section-heading">Tokenomics</h2>
+
+    <div class="token-info">
+      <div class="info-block">
+        <h3>Total Supply</h3>
+        <p>1,000,000,000 $SKIPUPPY</p>
+      </div>
+      <div class="info-block">
+        <h3>Tax</h3>
+        <p>0/0</p>
+      </div>
+      <div class="info-block">
+        <h3>Renounced</h3>
+        <p>Yes</p>
+      </div>
+      <div class="info-block">
+        <h3>LP Locked</h3>
+        <p>100%</p>
+      </div>
+    </div>
+
+    <div class="token-actions">
+      <a href="https://app.uniswap.org/explore/tokens/base/0x2fF5bE03a5456aB99836cc2caA4Ae0d158680581" target="_blank" class="btn primary">Buy on UniSwap</a>
+      <button class="btn secondary" id="addToWalletBtn">Add to Wallet</button>
+    </div>
+
+    <div class="chart-embed">
+      <style>#dexscreener-embed{position:relative;width:100%;padding-bottom:180%;}@media(min-width:800px){#dexscreener-embed{padding-bottom:75%;}}@media(min-width:1200px){#dexscreener-embed{padding-bottom:40%;}}#dexscreener-embed iframe{position:absolute;width:100%;height:600px;top:0;left:0;border:0;}</style><div id="dexscreener-embed"><iframe src="https://dexscreener.com/base/0x1eAAFE0a9E1C3ff6397671995c3F3Ac9cFeac309?embed=1&loadChartSettings=0&trades=0&chartLeftToolbar=0&chartDefaultOnMobile=1&chartTheme=dark&theme=dark&chartStyle=1&chartType=usd&interval=60"></iframe></div>
+    </div>
+  </div>
+</section>
+
+<section id="comic-gallery" class="comic-gallery">
+  <h2 class="section-heading">Comic Gallery</h2>
+  <div class="carousel-wrapper">
+    <div class="carousel-track" id="carouselTrack">
+      <div class="carousel-item">
+        <img src="assets/car1.jpg" alt="Carousel1">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/car2.png" alt="Carousel2">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/car3.jpg" alt="Carousel3">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/car4.png" alt="Carousel4">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/car5.png" alt="Carousel5">
+      </div>
+      <div class="carousel-item">
+        <img src="assets/car6.png" alt="Carousel6">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="roadmap" class="roadmap-section" id="roadmap">
+  <h2 class="section-heading">Roadmap</h2>
+  <div class="timeline-container">
+    
+
+    <div class="timeline-item">
+      <div class="timeline-marker"></div>
+      <div class="timeline-content">
+        <h3>Phase 1: The Awakening</h3>
+        <ul>
+          <li>Website Launch</li>
+          <li>Social Media Setup</li>
+          <li>Telegram Community Setup</li>
+          <li>First Meme & Image Drops</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-marker"></div>
+      <div class="timeline-content">
+        <h3>Phase 2: The Rise</h3>
+        <ul>
+          <li>Meme Branding Expansion</li>
+          <li>“Mayhem Mode” Visual Drops</li>
+          <li>Community Challenges & Contests</li>
+          <li>NFT Launch</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-marker"></div>
+      <div class="timeline-content">
+        <h3>Phase 3: The War of Masks</h3>
+        <ul>
+          <li>Comic Release: <em>SKI MASK PUPPY – The Rightful Heir</em></li>
+          <li>Cinematic Image Drops</li>
+          <li>Community Lore Creation Events</li>
+          <li>Merch Release (Above 2M Market Cap)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="timeline-marker"></div>
+      <div class="timeline-content">
+        <h3>Phase 4: The Legacy</h3>
+        <ul>
+          <li>Website V2 & Game Release</li>
+          <li>“Ski Puppy Archives” Launch</li>
+          <li>ComfyUI Integration: Let users generate custom Ski Mask Puppy images</li>
+          <li>Cross-Meme Collabs</li>
+          <li>staking, rewards and future whitelist for long term holders</li>
+          <li>Viral Meme Push: <em>“He was born in the mask – Take over Base Chain”</em></li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="join-rebellion" id="join">
+  <div class="rebellion-content">
+    <h2 class="section-heading">Join the Rebellion</h2>
+
+    <div class="contract-info">
+      <p><strong>Contract Address:</strong></p>
+      <p class="contract">0x2fF5bE03a5456aB99836cc2caA4Ae0d158680581</p>
+    </div>
+  <div class="community-cards">
+    
+    <!-- Telegram Card -->
+    <div class="community-card">
+      <div class="card-header">
+        <img src="assets/telegram.png" alt="Telegram Icon" class="icon">
+        <h3>Connect on Telegram</h3>
+      </div>
+      <p>Join our active Telegram community where you'll get the latest announcements, participate in discussions, and connect with other Skipuppy enthusiasts.</p>
+      <a href="https://t.me/skipuppy_on_base" target="_blank" rel="noopener noreferrer" class="community-button">
+        <img src="assets/telegram.png" alt="Telegram Icon" class="button-icon">
+        Join Telegram Group
+      </a>
+    </div>
+
+    <!-- Twitter Card -->
+    <div class="community-card">
+      <div class="card-header">
+        <img src="assets/twitter.png" alt="Twitter Icon" class="icon">
+        <h3>Follow Us on Twitter</h3>
+      </div>
+      <p>Stay up-to-date with the latest Skipuppy updates, partnerships, and community achievements. Follow our Twitter account for real-time updates.</p>
+      <a href="https://x.com/ski_puppy_base" target="_blank" rel="noopener noreferrer" class="community-button">
+        <img src="assets/twitter.png" alt="Twitter Icon" class="button-icon">
+        Follow on Twitter
+      </a>
+    </div>
+
+  </div>
+  <div class="base-badge">Base Chain</div>
+
+    <p class="meme-warning">
+        This is a meme coin. Don’t be weird.<br>
+        Launched on KOA.
+    </p>
+  </div>
+</section>
+
+
+
+
+  <script src="sources/index.js"></script>
+</body>
+</html>
