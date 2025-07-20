@@ -947,4 +947,86 @@ section {
   height: 20px;
 }
 
+/* Merch Coming Soon Page */
+.merch-coming-soon {
+  height: 100vh;
+  background-image: url('../assets/hero_bg.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.merch-coming-soon::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+  z-index: 1;
+}
+
+.merch-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  border-radius: 16px;
+  border: 2px solid #ff2d55;
+  box-shadow: 0 0 30px rgba(255, 45, 85, 0.3);
+}
+
+.merch-title {
+  font-size: 2.8rem;
+  font-family: 'Orbitron', sans-serif;
+  margin-bottom: 20px;
+  color: #ff2d55;
+}
+
+.merch-subtitle {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.merch-tagline {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.merch-hint {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #ff7b9c;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .merch-title {
+    font-size: 2.2rem;
+  }
+  .merch-subtitle {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .merch-title {
+    font-size: 1.8rem;
+  }
+  .merch-subtitle,
+  .merch-tagline {
+    font-size: 1rem;
+  }
+}
+
 
